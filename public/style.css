@@ -1,15 +1,15 @@
 h1 {
-    color:maroon;
+    color:maroon !important;
 }
 
 .posts {
-    background-color: blanchedalmond;
+    background-color: blanchedalmond !important;
 }
 
 .user{
-    font-style: italic;
+    font-style: italic !important;
 }
 
 h3,h4{
-    background-color: blanchedalmond;
+    background-color: blanchedalmond !important;
 }
