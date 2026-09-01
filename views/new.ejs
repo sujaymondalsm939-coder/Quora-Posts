@@ -1,13 +1,40 @@
 <% layout("/layouts/boilerplate.ejs") %>
 
+<main class="page-container">
+  <a class="back-link" href="/posts">
+    <i class="fa-solid fa-arrow-left"></i> Back to posts
+  </a>
 
+  <section class="form-card">
+    <p class="eyebrow">Create post</p>
+    <h1>Share your thoughts</h1>
+    <p class="subtitle">Start a conversation with the community.</p>
 
-    <h2>Create a new post</h2>
     <form method="post" action="/posts">
-        <input type="text" name="username" placeholder="Enter your username">
-    </br><br>
-        <textarea name="content" placeholder="Enter your post content"></textarea>
-    <br><br>
-        <button type="submit">Create Post</button>
-    </form>
+      <label for="username">Your username</label>
+      <input
+        id="username"
+        name="username"
+        type="text"
+        placeholder="e.g. sujaysm04"
+        required
+      >
 
+      <label for="content">Your post</label>
+      <textarea
+        id="content"
+        name="content"
+        placeholder="What would you like to share?"
+        required
+      ></textarea>
+
+      <div class="form-actions">
+        <a class="cancel-btn" href="/posts">Cancel</a>
+
+        <button class="create-btn" type="submit">
+          <i class="fa-solid fa-paper-plane"></i> Publish post
+        </button>
+      </div>
+    </form>
+  </section>
+</main>
